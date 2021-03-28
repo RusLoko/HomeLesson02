@@ -3,7 +3,7 @@ package Lesson2;
 public class Main {
 
 
-    public static void main (String args[]) {
+    public static void main(String args[]) {
 
         System.out.println("Задание 1");
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 1};
@@ -12,11 +12,11 @@ public class Main {
             System.out.print(arr[i] + " ");
         }
         System.out.println("");
-        for (int i = 0; i < maxArr_3; i++){
+        for (int i = 0; i < maxArr_3; i++) {
             if (arr[i] == 1) {
                 arr[i] = 0;
             } else arr[i] = 1;
-        System.out.print(arr[i] + " ");
+            System.out.print(arr[i] + " ");
 
         }
         System.out.println("\n Задание 2");
@@ -25,10 +25,10 @@ public class Main {
         int d = 0;
         //int maxMass = arr_2.length;
 
-        for (int i = 0; i <arr_2.length; i++, d = d + 3) {
+        for (int i = 0; i < arr_2.length; i++, d = d + 3) {
             arr_2[i] = d;
             System.out.print(arr_2[i] + " ");
-    }
+        }
         System.out.println("\n Задание 3");
 
         int[] arr_3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
@@ -37,7 +37,7 @@ public class Main {
             if (arr_3[i] < 6) arr_3[i] = arr_3[i] * 2;
         }
         for (int i = 0; i < maxArr; i++) {
-            System.out.print(arr_3[i]+" ");
+            System.out.print(arr_3[i] + " ");
         }
         System.out.println("\n Задание 4");
         int[][] arr_4 = new int[4][4];
@@ -49,8 +49,21 @@ public class Main {
             }
             System.out.println();
         }
+        System.out.println("\n Задание 5");
+        int[] numbers = {95, 18, 27, 64, 25, 14, 13, 52, 21};
+        int min = numbers[0];
+        int max = numbers[0];
+        for (int n : numbers) {
+            min = min < n ? min : n;
+            max = max > n ? max : n;
+        }
+        System.out.println("Min = " + min);
+        System.out.println("Max = " + max);
     }
+
+
 }
+
 
 
 
